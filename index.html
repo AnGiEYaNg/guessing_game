@@ -3,18 +3,22 @@
 
 <head> 
 	<link rel='stylesheet' href='main.css'>
+	<!--<script src='jquery.min.js'></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type='text/javascript' src='script.js'></script>
 </head>
 
 <body>
+
 	<h1>~ Guessing Game ~</h1>
-	<form>
+	<form >
 	<div class='rowone'>
-		<input type="text" placeholder='Pick: 1-100'> 
-		<input type='submit' value="Make A Guess">
+		<input type="number" class='input' placeholder='Pick: 1-100'> 
+		<button id="submit">Make a Guess!</button>
 	</div>
 	<div class='rowtwo'>
-		<input type='submit' value='Replay' >
-		<input type='submit' value='Hint'>
+		<button id="reset" class="myButton">Replay</button>
+		<button id="hint" class="myButton">Hint</button>
 	</div>
 	</form>
 </body>
