@@ -13,8 +13,6 @@ $(document).ready(function(){
 
 	//function to compare guess hotter or colder with relative to the last input
 var compared=function(guess,guesses){
-if(guesses.length<1){return compare;}
-else{
 	if(guess<guesses[guesses.length-2]&&guesses[guesses.length-2]<answer)
 		return compare = "";
 	else if (guess>guesses[guesses.length-2]&&guesses[guesses.length-2]>answer)
@@ -25,7 +23,6 @@ else{
 		return compare=" getting <span class='hot'>HOTTER</span> but";
 	else
 		return compare;
-}
 };
 
 	//check for real number
