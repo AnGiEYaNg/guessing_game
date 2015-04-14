@@ -7,6 +7,8 @@ $(document).ready(function(){
 
 //accept ans by click submit
 	$('#submit').on('click',function(event){
+		$('form').css({'background-color': '#AD5CAD',
+								'border-color':'#FF99cc'});
 		guess = $(".input").val();
 
 	//function to compare guess hotter or colder with relative to the last input
